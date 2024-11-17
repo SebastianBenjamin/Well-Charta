@@ -1,0 +1,499 @@
+body {
+  margin: 0;
+  font-family: Verdana;
+  /* background-color: #022556; */
+  /* height:1000px; */
+}
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 80px;
+  top: 0;
+  background-color: #011633;
+  gap:20px;
+  img{
+    height: 50px;
+  }
+}
+.nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+  height: 50px;
+  /* background-color */
+  img {
+    height: 30px;
+  }
+}
+.search {
+  width: 10px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url("../icons/search\ \(1\).png");
+  background-size: contain;
+  background-position: 10px 0px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  text-align: center;
+  font-size: large;
+  background-color: transparent;
+}
+
+#search:focus {
+  background-color: white;
+  width: 30%;
+}
+
+.nav div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav a {
+  color: rgb(144, 144, 144);
+}
+.nav div:hover {
+  /* border-bottom: 5px solid rgb(255, 255, 255);  */
+  background-color: #011633;
+  a {
+    color: white;
+  }
+  /* text-shadow: 2px 2px 3px #0018a2; */
+  /* backdrop-filter: blur(45px); */
+}
+.nav img:hover {
+  -webkit-filter: drop-shadow(1px 1px 1px #ff0909);
+  filter: drop-shadow(1px 1px 1px #ff0909);
+}
+
+.carrousel {
+  z-index: -1;
+  box-sizing: border-box;
+  background-color: azure;
+  /* height: 89vh; */
+  overflow: hidden;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.about_parent {
+  background-color: #010826;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  p {
+    color: white;
+    text-align: justify;
+  }
+}
+
+.hov p {
+  font-weight: bold;
+}
+.Hsp div:hover {
+  /* height: 360px; */
+  background-color: #ffffffae;
+  color: black;
+  /* display: block; */
+  .hsp_img {
+    box-shadow: 1px 1px 5px #171d58;
+  }
+}
+.hospitals_parent {
+  background-color: #011633;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.Hsp div {
+  padding: 20px;
+  height: 350px;
+  width: 250px;
+  border-radius: 20px;
+  background-color: #b1b6ff37;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.854);
+  border: 1px black solid;
+}
+.hsp_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  /* margin: 10px; */
+}
+a {
+  text-decoration: none;
+}
+.banner {
+  padding: 5px;
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.testimonials_parent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  flex-direction: column;
+  gap: 40px;
+  background-color: rgb(0, 40, 78);
+}
+.testimonials_parent div {
+  height: 100px;
+  width: 70%;
+  background-color: rgba(200, 227, 250, 0.493);
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+.testimonials_parent p {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonials_parent div:hover {
+  background-color: rgb(200, 227, 250);
+  .t_image {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+}
+.t_image {
+  height: 130px;
+  border-radius: 50px;
+}
+
+.contact_parent {
+  background-color: rgb(1, 55, 105);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.c_forum {
+  height: 450px;
+  width: 30%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.socials-card {
+  height: 450px;
+  width: 30%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.socials-card-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.socials-card-links li {
+  margin-bottom: 15px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.social-link i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+.contact_parent {
+  input[id="Name"] {
+    height: 40px;
+    width: 49%;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+  }
+  input[id="Email"],
+  [id="Mob"] {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+  }
+  textarea {
+    height: 80px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    font-family: Verdana;
+  }
+  label {
+    font-size: small;
+    font-weight: 5px;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+  }
+  input[type="submit"] {
+    background-color: #0439aa;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-left: 35%;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #0051ff;
+  }
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  .Header {
+    width: 100%;
+    font-size: small;
+    img{
+      height: 30px;
+    }
+  }
+  .nav {
+    height: 50px;
+    width: 100%;
+    font-size: 7px;
+  }
+  .nav input::placeholder {
+    text-align: center;
+    color: rgb(144, 144, 144);
+    font-size: 10px;
+  }
+
+  .nav img {
+    height: 20px;
+  }
+  #search {
+    font-size: 13px;
+    background-size: 20px;
+    background-position: 10px 10px;
+    background-color: none;
+  }
+  .carrousel {
+    width: 100%;
+  }
+  .banner {
+    font-size: medium;
+  }
+  .hospitals_parent {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  .hospitals_parent div {
+    height: 300px;
+    margin: 10px;
+    font-size: small;
+    padding: 10px;
+  }
+  .hsp_img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .testimonials_parent p {
+    font-size: 10.5px;
+  }
+  .t_image {
+    height: 70px;
+  }
+  .contact_parent {
+    flex-direction: column;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .contact_parent div {
+    padding: 0px;
+    width: 100%;
+  }
+  .socials-card-links {
+    margin: 30%;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  /* For mobile phones: */
+  .Header {
+    height: 120px;
+    width: 100%;
+    font-size: xx-large;
+  }
+  .nav {
+    height: 100px;
+    width: 100%;
+    font-size: x-large;
+  }
+
+  .nav img {
+    height: 40px;
+  }
+  #search {
+    background-size: 50px;
+    font-size: 40px;
+  }
+  .carrousel {
+    width: 100%;
+  }
+  .banner {
+    font-size: xx-large;
+  }
+  .hospitals_parent {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  .hospitals_parent div {
+    width: 500px;
+    height: 600px;
+    margin: 30px;
+    font-size: 30px;
+    padding: 20px;
+  }
+  .hsp_img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .testimonials_parent p {
+    font-size: x-large;
+  }
+  .t_image {
+    height: 120px;
+  }
+  .contact_parent {
+    padding: 0px;
+  }
+  .contact_parent div {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100%;
+    label {
+      font-size: x-large;
+    }
+    input {
+      font-size: x-large;
+    }
+    input[type="text"],
+    [type="Email"] {
+      height: 80px;
+    }
+    textarea {
+      font-size: x-large;
+      height: 80px;
+    }
+  }
+
+  .social-link {
+    font-size: xx-large;
+  }
+  .footer {
+    font-size: xx-large;
+  }
+}
+html {
+  scroll-padding-top: 110px;
+  scroll-behavior: smooth;
+}

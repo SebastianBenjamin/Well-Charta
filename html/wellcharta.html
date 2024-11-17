@@ -1,0 +1,257 @@
+<html>
+  <head>
+    <!-- Meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Well-Charta</title>
+    <!-- Favicon for the webpage -->
+    <link href="../icons/medical-report_5199547.png" rel="icon" />
+    <!-- Link to external stylesheet for font-awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <!-- Link to custom stylesheet for the webpage -->
+    <link href="../css/wellcharta.css" rel="stylesheet" />
+  </head>
+
+  <!-- Body section containing the main content of the webpage -->
+  <body>
+    <!-- Header section with the website title -->
+    <div class="Header" id="Header">
+      <img src="../icons/medical-report_5199547.png">
+      <h1>WELL CHARTA</h1>
+    </div>
+
+    <!-- Navigation section with links to different parts of the website -->
+    <div class="nav">
+      <div>
+        <!-- Link to the top of the page -->
+        <a href="#Header">
+          <h2>HOME</h2>
+        </a>
+      </div>
+      <div>
+        <!-- Link to the contact section of the page -->
+        <a href="#contact">
+          <h2>CONTACT</h2>
+        </a>
+      </div>
+      
+      <!-- Search input field -->
+      <input type="text" id="search"  onclick="searchfun()" class="search" placeholder="SEARCH" />
+      <!-- Link to make a phone call with an image icon -->
+      <a href="tel:12345678910">
+        <img src="../icons/siren.png" />
+      </a>
+    </div>
+    <!-- <div id="userr" >
+      <a><h2 ></h2></a>
+      Link to the login page, opening in a new tab
+        
+      
+    </div> -->
+<div id="content1page">
+    <!-- Carousel section with sliding images -->
+    <div class="carrousel">
+      <div class="slideshow-container">
+        <!-- Full-width image slides with fade effect -->
+        <div class="mySlides fade">
+          <img src="../images/0.jpeg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../images/1.jpeg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../images/3.jpeg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../images/2.jpeg" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner section for nearby hospitals -->
+    <div class="banner">HOSPITALS NEARBY</div>
+
+    <!-- Section displaying information about various hospitals -->
+    <div class="hospitals_parent">
+      <div class="Hsp">
+        <!-- Link to Lisie Hospital website, opening in a new tab -->
+        <a class="hov" href="https://www.lisiehospital.org/" target="_blank">
+          <div>
+            <!-- Image and description of Lisie Hospital -->
+            <img src="../icons/lisie.png" class="hsp_img" /><br />
+            <p>Lisie Hospital</p>
+            Lisie Hospital, renowned for its unwavering commitment to medical
+            excellence, delivers state-of-the-art treatments and compassionate
+            care, ensuring optimal health outcomes for all patients.
+          </div>
+        </a>
+      </div>
+      <div class="Hsp">
+        <!-- Link to Lakeshore Hospital website, opening in a new tab -->
+        <a
+          class="hov"
+          href="https://www.vpslakeshorehospital.com/"
+          target="_blank"
+        >
+          <div>
+            <!-- Image and description of Lakeshore Hospital -->
+            <img src="../icons/lakeshore.png" class="hsp_img" /><br />
+            <p>Lakeshore Hospital</p>
+            Lakeshore Hospital, equipped with cutting-edge facilities and a
+            steadfast dedication to innovation and research, strives to enhance
+            patient well-being through the continual advancement of medical
+            knowledge and technology.
+          </div>
+        </a>
+      </div>
+      <div class="Hsp">
+        <!-- Link to Lourdes Hospital website, opening in a new tab -->
+        <a class="hov" href="https://www.lourdeshospital.in/" target="_blank">
+          <div>
+            <!-- Image and description of Lourdes Hospital -->
+            <img src="../icons/lourdes.png" class="hsp_img" /><br />
+            <p>Lourdes Hospital</p>
+            Lourdes Hospital, dedicated to holistic healing, fosters a nurturing
+            environment for patients, promoting comprehensive physical and
+            emotional recovery through attentive healthcare services and
+            empathetic support.
+          </div>
+        </a>
+      </div>
+      <div class="Hsp">
+        <!-- Link to Government Hospital website, opening in a new tab -->
+        <a
+          class="hov"
+          href="https://generalhospitalernakulam.in/"
+          target="_blank"
+        >
+          <div>
+            <!-- Image and description of Government Hospital -->
+            <img src="../icons/govthsp.png" class="hsp_img" /><br />
+            <p>Government Hospital</p>
+            Government Hospital, a cornerstone of public healthcare, provides
+            universal access to essential medical services, addressing the
+            diverse healthcare needs of the community without prejudice or
+            discrimination.
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Banner section for user stories -->
+    <div class="banner">USER STORIES</div>
+
+    <!-- Section displaying testimonials from users -->
+    <div class="testimonials_parent">
+      <div>
+        <!-- User testimonial with image and text -->
+        <img src="../images/Portrait1.png" class="t_image" />
+        <p>
+          "Well-Charta has revolutionized the way I manage my health records.
+          It's incredibly easy to access and share my medical information with
+          my doctors. I highly recommend it to anyone looking for a reliable
+          health management solution."
+          <br /><br /><b>John D., 34, New York</b>
+        </p>
+      </div>
+      <div>
+        <!-- User testimonial with image and text -->
+        <img src="../images/Portrait2.png" class="t_image" />
+        <p>
+          "Using Well-Charta has been a game-changer for me. I love how I can
+          have all my health data at my fingertips and share my vitals with
+          specialists instantly. It's convenient and secure – just what I
+          needed!"
+          <br /><br /><b>Emily S., 29, California</b>
+        </p>
+      </div>
+      <div>
+        <!-- User testimonial with image and text -->
+        <img src="../images/Portrait 3.png" class="t_image" />
+        <p>
+          "As a busy professional, I need quick and easy access to my medical
+          records. Well-Charta provides just that. It's a fantastic tool for
+          anyone who wants to stay on top of their health without any hassle."
+          <br /><br /><b>Samantha K., 37, Floridak</b>
+        </p>
+      </div>
+    </div>
+
+    <!-- Banner section for contact information -->
+    <div class="banner" id="contact">CONTACT US</div>
+
+    <!-- Contact section with a form and social media links -->
+    <div class="contact_parent">
+      <div class="c_forum">
+        <!-- Contact form for user submissions -->
+        <form>
+          <label for="Name">Your Name</label><br />
+          <input type="text" id="Name" placeholder="First name" required />
+          <input type="text" id="Name" placeholder="Last name" />
+          <br /><br />
+          <label for="Email">Email</label><br />
+          <input
+            type="email"
+            id="Email"
+            placeholder="abc@example.com"
+            required
+          />
+          <br /><br />
+          <label for="Mob">Mobile</label><br />
+          <input type="text" id="Mob" placeholder="+00-123456789" required />
+          <br /><br />
+          <label for="Mob">Message</label><br />
+          <textarea placeholder="Write your message..." required></textarea>
+          <br /><br />
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
+      <div class="socials-card">
+        <!-- List of social media links -->
+        <ul class="socials-card-links">
+          <li>
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </li>
+          <br />
+          <li>
+            <a href="#" class="social-link"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+          </li>
+          <br />
+          <li>
+            <a href="#" class="social-link"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </li>
+          <br />
+          <li>
+            <a href="#" class="social-link"
+              ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- Footer section with copyright information -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; Benjamin Sebastian 2024. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript to handle the image slideshow -->
+    <script src="./registerscript.js"></script>
+    <script src="./mainscript.js"></script>
+  </body>
+</html>
